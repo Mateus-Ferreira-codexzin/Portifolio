@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Sidebar</title>
+</head>
+<body>
+
+<nav id="sidebar">
+    <div id="sidebar_content">
+        <div id="user">
+        <img src="src/images/avatar.jpg" id="user_avatar" alt="Avatar">
+
+        <p id="user_infos">
+            <span class="item-description">
+                Mateus Ferreira
+            </span>
+            <span class="item-description">
+                Estudante
+            </span>
+        </p>
+    </div>
+
+
+<div class="tab">
+    <ul id="side_items">
+        <li class="side-item active" onclick="openCity(event, 'Início')">
+            <a href="#Início">
+                <i class="fa-solid fa-chart-column"></i>   
+                <span class="label">Início         
+                </span>
+            </a>
+        </li>
+        <li class="side-item" onclick="openCity(event, 'Sobre Mim')">
+            <a href="#Sobre Mim">
+                <i class="fa-solid fa-user"></i>
+                <span class="label">
+                 Sobre Mim
+                </span>
+            </a>
+        </li>
+
+        <li class="side-item" onclick="openCity(event, 'Projetos')">
+            <a href="#Projetos">
+                <i class="fa-solid fa-bell"></i>
+                <span class="label">
+               Projetos
+                </span>
+            </a>   
+     </li>
+    </div>
+    <button id="open_btn">
+        <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+    </button>
+    </div>
+    
+    <div id="logout">
+        <button id="logout_btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span class="item-description">
+                Logout
+            </span>
+        </button>
+    </div>
+  </nav>
+
+<div id="Início" class="tabcontent">
+  <h3>Início</h3>
+  <p>Esse site foi feito somente por mim</p>
+</div>
+
+<div id="Sobre Mim" class="tabcontent">
+  <h3>Sobre Mim</h3>
+  <p>Olá sou Mateus Ferreira</p>
+</div>
+
+<div id="Projetos" class="tabcontent">
+  <h3>Projetos</h3>
+  <p>Meus projetos estão todos aqui</p>
+</div>
+
+    <script src="src/javascript/script.js"></script>
+</body>
+</html>
