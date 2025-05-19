@@ -29,6 +29,10 @@
   color: aliceblue;
 }
 
+.tabcontent {
+    text-align: center;
+}
+
 .tab button:hover {
   background-color: grey;
 }
@@ -39,8 +43,13 @@
 
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 12px 24px;
   border-top: none;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
 }
 
 body {
@@ -235,4 +244,10 @@ main h1 {
 #sidebar.open-sidebar .side-item a {
     justify-content: flex-start;
     gap: 14px;
+}
+
+.user_avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
 }
